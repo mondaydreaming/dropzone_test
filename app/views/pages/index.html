@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropzone</title>
+  
+</head>
+<body>
+
+<h1>Dropzone</h1>
+  <!-- DROPZONE FORM -->
+  <form id="my-awesome-dropzone" action="/target" class="dropzone"></form>
+
+  <!-- RUBY DROPZONE FORM -->
+    <form class="none" id="csv-upload-form" enctype="multipart/form-data" action="/api/leads/import" accept-charset="UTF-8" method="post">
+      <input name="utf8" type="hidden" value="✓">
+      <input type="hidden" name="authenticity_token">
+      <input type="file" name="file" id="file" class="dz-clickable">
+      <input type="submit" class="upload-csv-button" name="commit" value="Upload">
+    </form>
+
+</body>
+</html>
